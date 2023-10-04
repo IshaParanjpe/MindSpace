@@ -1,0 +1,64 @@
+{% extends 'common/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="u-align-center u-section-5" id="carousel_c73e">
+  <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm ">
+    <div class="u-expanded-width-xs u-shape u-shape-svg u-text-palette-2-light-1 u-shape-1">
+      <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 120" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9d97"></use></svg>
+      <svg class="u-svg-content" viewBox="0 0 160 120" x="0px" y="0px" id="svg-9d97"><path d="M124.3,80.3c20.5-1.1,32-18.4,34.8-31.5c4.7-22.6-6.7-55.4-81.5-47.7c-124.8,12.7-75.1,145.7-16.9,114
+C99.9,93.7,86.4,82.3,124.3,80.3z"></path></svg>
+    </div>
+    <div class="u-expanded-width-md u-expanded-width-xs u-shape u-shape-svg  u-shape-2">
+      <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 150" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1b21"></use></svg>
+      <svg class="u-svg-content" viewBox="0 0 160 150" x="0px" y="0px" id="svg-1b21"></svg>
+    </div> 
+    <div class="u-clearfix u-gutter-20 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout">
+        <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-image u-layout-cell u-radius-50 u-right-cell u-size-36 u-image-3" src="" data-image-width="700" data-image-height="700">
+                <div class="u-container-layout u-container-layout-4" src=""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="u-align-left u-container-style  u-expanded-width-lg u-group u-radius-30 u-shape-round u-white u-group-1">
+      <div class=" u-container-layout-5" style="width: 1000px;">
+        <!-- <main class="page login-page"> -->
+          <section class="clean-block clean-form dark">
+              <div class="container" >
+                  <div class="block-heading">
+                      <h2 class="text-info">Your Journal!</h2>
+                  </div>
+                  <form method="POST">
+                      {% csrf_token %}
+                      <div class="mb-3">
+                          <label class="form-label" ></label><input placeholder="Enter Date" class="form-control" type="text" name="date" >
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" ></label><input placeholder="Enter Day" class="form-control" type="text" name="day" >
+                    </div>
+                      <div class="mb-3" >
+                        <label class="form-label" ></label><input type="textbox" placeholder="Start writing" class="form-control" name="text" style="height: 500px ;" >
+                    </div>
+                      <!-- <div class="mb-3">
+                          <div class="form-check"><input class="form-check-input" type="checkbox" id="checkbox"><label class="form-check-label" for="checkbox">Remember me</label>
+                          </div>
+                      </div> -->
+                      <button class="btn btn-primary" type="submit">Add</button>
+                  </form>
+              </div>
+          </section>
+      </main>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'common/base.html'%}
+{% load static %}
+{% load widget_tweaks %}
+{% block content%}
+
+<section class="py-5 mt-5">
+    <div class="container py-5">
+        <div class="row mb-5" id="potty">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2 class="fw-bold">Add Your Recommendation</h2>
+                <p class="text-muted w-lg-50"></p>
+            </div>
+            <form action="{% url 'recAdd' %}" method="post" style="align-items: center ;">
+                {% csrf_token %}
+                <label>Name</label>
+                {% render_field form.name %}<br />
+                <label>Description</label>
+                {% render_field form.description %}<br />
+                <label>Genre</label>
+                {% render_field form.genre %}<br />
+                <label>Platform</label>
+                {% render_field form.platform %}<br />
+                <label>Link</label>
+                {% render_field form.link %}<br />
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %} 
+

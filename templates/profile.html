@@ -1,0 +1,30 @@
+{% extends 'common/base.html' %}
+{% load static %}
+{% block content %}
+
+{% for i in pro %}
+<section class="u-align-center u-clearfix u-white u-section-3" id="carousel_06db">
+<div class="u-clearfix u-expanded-width">
+    <div class="u-layout">
+      <div class="u-layout-row">
+        <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-5">
+          <div class="u-container-layout u-container-layout-2">
+            <h3 class="u-text u-text-1">{{i.username}}</h3>
+            <div class="u-container-layout u-container-layout-1" >
+              <img src="{% static 'images/p9.webp' %}" style="width: 400px; height: 300px; margin-left: 0%; margin-top: 0%;" class="u-logo-image u-logo-image-1  ">
+            </div> 
+          </div>
+        </div>
+        <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-6">
+          <div class="u-container-layout u-valign-top u-container-layout-6">
+            <p class="u-text u-text-3 u-text-black">Email: {{i.email}}</p></br>
+            <p class="u-text u-text-3 u-text-black">Age: {{i.age}}</p></br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+{% endblock %}

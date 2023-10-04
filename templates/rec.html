@@ -1,0 +1,62 @@
+{% extends 'common/base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="u-clearfix u-palette-3-base u-section-2" id="carousel_ec7d">
+    <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1"></div>
+    <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-sheet-1"></div>
+    <div class="u-list u-list-1">
+      <div class="row mb-5">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <h2 class="fw-bold">Recommendations!</h2>
+            <p class="text-muted w-lg-50"></p>
+        </div>
+      </div>
+      </div>
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-success" role="alert">
+        {{message.tags}}
+        {{message}}
+      </div>
+      {% endfor %}
+      {% endif %}
+      
+
+      <div class="u-repeater u-repeater-1">
+        {% for i in rec %}
+        <div class="u-align-center u-container-style u-list-item u-radius-15 u-repeater-item u-shape-round u-white u-list-item-1">
+          <div class="u-container-layout u-similar-container u-container-layout-1">
+            </span>
+            <h5 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-2-base u-text-1">{{i.choices}}</h5>
+            <p class="u-text u-text-palette-2-dark-2 u-text-2">{{i.name}}</p>
+            <p class="u-text u-text-palette-2-dark-2 u-text-2">{{i.description}}</p>
+            <p class="u-text u-text-palette-2-dark-2 u-text-2">{{i.genre}}</p>
+            <p class="u-text u-text-palette-2-dark-2 u-text-2">{{i.link}}</p>.</br>
+
+            <a href="{% url 'recUpdate' i.id %}">
+              <button class="btn btn-warning">Update</button></a>
+            <a href="{% url 'recDelete' i.id %}">
+                <button class="btn btn-danger">Delete</button></a></br>
+
+            <img src="{% static 'images/about-time.png' %}" style="height: 0px; border-radius: 80%;">
+          </div>
+        </div>
+        {% endfor %}
+
+        <div class="row mb-4" id="newProj" >
+          <a href="{% url 'recAdd' %}">
+              <button type="button" class="btn btn-danger" style=" padding: 5%; width: 400px; height: 10px; margin-left: 30px;" >New Recommendations</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <div class="u-align-center u-container-style u-expanded-width u-group u-shape-rectangle u-group-1" style="margin-top: 30px;">
+    <div class="u-container-layout u-container-layout-7">
+     
+    </div>
+  </div>
+{% endblock %}

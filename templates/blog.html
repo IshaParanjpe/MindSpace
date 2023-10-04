@@ -1,0 +1,210 @@
+{% extends 'common/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<section class="u-align-center " id="carousel_dc8c">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1" id="ab" style="margin-top: 5px;">
+    <!-- <div class="u-expanded-width-md u-shape u-shape-svg u-text-palette-2-light-1 u-shape-1" style="margin-top: 0;">
+      <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 130" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-71c0"></use></svg>
+      <svg class="u-svg-content" viewBox="0 0 160 130" x="0px" y="0px" id="svg-71c0"><path d="M52.6,11.4C12,28.8-29.7,90.3,29.4,124c19.1,10.9,43.7,6.6,57.2-10.7c0.4-0.5,0.8-1,1.1-1.5c17.8-24.6,32.6-4.1,48.4-8.5
+C180.4,91.2,168.9-38.5,52.6,11.4z"></path></svg>
+    </div> -->
+    <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-shape u-shape-svg u-text-palette-3-base u-shape-2">
+      <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 150" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1b21"></use></svg>
+      <svg class="u-svg-content" viewBox="0 0 160 150" x="0px" y="0px" id="svg-1b21"><path d="M43.2,126.9c14.2,1.3,27.6,7,39.1,15.6c8.3,6.1,19.4,10.3,32.7,5.3c11.7-4.4,18.6-17.4,21-30.2c2.6-13.3,8.1-25.9,15.7-37.1
+c8.3-12.1,10.8-27.9,5.3-42.7C150.5,20.3,134.6,9,117,7.6C107.9,6.9,98.8,5,90.1,1.9C83-0.6,75-0.7,67.4,2.1
+c-9.9,3.7-17,11.6-20.1,21c-3.3,10.1-10.9,18-20.6,22.2c-0.1,0-0.1,0.1-0.2,0.1c-20.3,8.9-31,32-24.6,53.2
+C6.9,115.6,25.2,125.2,43.2,126.9z"></path></svg>
+<main class="my-5">
+  <div class="container">
+    <!--Section: Content-->
+    <section class="text-center">
+      <h1 class="u-text u-text-1"><strong>Blogs</strong></h1>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="{% static 'images/m1.webp' %}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Treating the Effects of Childhood Trauma</h3>
+              <p class="card-text" style="color: black;">
+                "They were so young when that happened, they won’t even remember it as an adult "
+              </p>
+              <a href="{% url 'blog1' %}" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="{% static 'images/m5.webp' %}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Depression</h2       >
+              <p class="card-text" style="color: black;">
+                "It is one of the most common mental disorders, impacting an estimated 7.1% of all adults in the U.S. each year."
+              </p>
+              <a href="{% url 'blog2' %}" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="{% static 'images/m7.webp' %}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">How to take care of your mental health</h3>
+              <p class="card-text" style="color: black;">
+                Find out how to take care of your mental wellbeing with these tried and tested tips for mental health first aid
+              </p>
+              <a href="{% url 'blog3' %}" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="{% static 'images/m2.webp' %}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Importance Of Mental Health Awareness</h3>
+              <p class="card-text" style="color: black;">
+                "Mental illnesses affect 19% of the adult population, 46% of teenagers and 13% of children each year."
+              </p>
+              <a href="{% url 'blog4' %}" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="{% static 'images/m9.webp' %}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">10 Characteristics of Mentally Healthy People</h3>
+              <p class="card-text" style="color: black;">
+                "Mental health is more than just the absence of mental illness."
+              </p>
+              <a href="{% url 'blog5' %}" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="{% static 'images/m8.webp' %}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Brain Health</h3>
+              <p class="card-text" style="color: black;">
+                "The brain is arguably the most complex organ in the human body and recognized as the body’s command centre, influencing every aspect of life."
+              </p>
+              <a href="{% url 'blog6' %}" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+    <!-- Pagination -->
+    
+  </div>
+</main>
+    </div>
+    <div class="u-clearfix u-gutter-20 u-layout-wrap u-layout-wrap-1">
+      <div class="u-gutter-0 u-layout">
+        
+        <div class="u-layout-row">
+          <div class="u-size-20 u-size-30-md">
+            <div class="u-layout-col">
+              <div class="u-align-left u-container-style u-image u-image-round u-layout-cell u-radius-50 u-size-20 u-image-1" data-image-width="1000" data-image-height="1000">
+                <div class="u-container-layout u-container-layout-1" src="{% static 'images/p5.png' %}"></div>
+              </div>
+              <div class="u-align-left u-container-style u-image u-image-round u-layout-cell u-radius-50 u-size-40 u-image-2" data-image-width="512" data-image-height="688">
+                <div class="u-container-layout u-container-layout-2" src=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="u-size-20 u-size-30-md">
+            <div class="u-layout-col">
+              <div class="u-align-left u-container-style u-image u-image-round u-layout-cell u-radius-50 u-size-40 u-image-3" data-image-width="1158" data-image-height="1080">
+                <div class="u-container-layout u-container-layout-3" src=""></div>
+              </div>
+              <div class="u-align-left u-container-style u-image u-layout-cell u-radius-50 u-size-20 u-image-4" data-image-width="626" data-image-height="417">
+                <div class="u-container-layout u-container-layout-4" src=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="u-size-20 u-size-60-md">
+            <div class="u-layout-col">
+              <div class="u-align-left u-container-style u-image u-image-round u-layout-cell u-radius-50 u-size-20 u-image-5" data-image-width="1200" data-image-height="841">
+                <div class="u-container-layout u-container-layout-5" src=""></div>
+              </div>
+              <div class="u-align-left u-container-style u-image u-layout-cell u-radius-50 u-size-40 u-image-6" data-image-width="626" data-image-height="939">
+                <div class="u-container-layout u-container-layout-6" src=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<section class="u-clearfix u-palette-3-base u-section-2" id="carousel_ec7d">
+    <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1"></div>
+    <div class="u-list u-list-1">
+      <div class="u-repeater u-repeater-1">
+        {% for i in blo %}
+        <div class="u-align-center u-container-style u-list-item u-radius-15 u-repeater-item u-shape-round u-white u-list-item-1">
+          <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle  u-text-white u-icon-1">
+            <img src="{% static 'images/p20.webp' %}" style="height: 100px; border-radius: 80%;"></span>
+            <h5 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-2-base u-text-1">{{i.name}}</h5>
+            <p class="u-text u-text-palette-2-dark-2 u-text-2">{{i.description}}</p>
+            <!-- <a href="https://nicepage.com/c/food-restaurant-html-templates" class="u-border-2 u-border-active-palette-3-base u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-active-palette-2-base u-text-hover-palette-2-base u-text-palette-2-base u-top-left-radius-0 u-top-right-radius-0 u-btn-1">more</a> -->
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+    
+  </section>
+
+  <div class="u-align-center u-container-style u-expanded-width u-group u-shape-rectangle u-group-1" style="margin-top: 30px;">
+    <div class="u-container-layout u-container-layout-7">
+    </div>
+  </div>
+{% endblock %}
